@@ -7,19 +7,23 @@ var app = new Vue(
     data: {
       esercizioBase: "Hello Vue.js!",
       // Aggiungere alla pagina un’immagine, presa anch’essa da un data.
-        // immagine con url
+      // immagine con url
       immagineUrl: "https://velug.it/images/banners/JQUERYLOGO.gif",
-        // immagine importata
+      // immagine importata
       immagine: "./assets/img/vue.png",
 
       ///////////////BONUS//////////////////////////////
       cambia: "Cambia testo al titolo!",
-      clicca: "Clicca per cambiare colore al titolo!",
+      clicca: "Clicca per cambiare colore al titolo! Riclicca per farlo tornare normale",
       coloretitolo: "black"
     },
     methods: {
       colore: function () {
-        this.coloretitolo = 'green'
+        if (this.coloretitolo == 'black') {
+          this.coloretitolo = 'green';
+        } else {
+          this.coloretitolo = 'black';
+        }
       }
     }
   }
