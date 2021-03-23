@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/master.css">
 </head>
 <body>
 
   <div id="root">
-    <h3>{{consegna}}</h3>
-    <h1>{{esercizioBase}}</h1>
+    <div class="esercizio">
+      <h1>{{esercizioBase}}</h1>
+    </div>
+    <div class="bonusimmagine">
+      <hr>
+      <img :src="immagineUrl" alt="immagine" style="width: 100px; margin: 10px;">
+      <img :src="immagine" alt="immagine" style="width: 100px; margin: 10px;">
+    </div>
     <hr>
-
-    <img :src="immagineUrl" alt="immagine" style="width: 100px; margin: 10px;">
-    <img :src="immagine" alt="immagine" style="width: 100px; margin: 10px;">
+    <div class="bonusinput">
+      <h3>{{cambia}}</h3>
+      <input v-model="esercizioBase">
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="./assets/js/main.js" charset="utf-8"></script>
