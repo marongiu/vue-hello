@@ -14,6 +14,13 @@ var app = new Vue(
 
       ///////////////BONUS//////////////////////////////
       cambia: "Cambia testo al titolo!",
+      clicca: "Clicca per cambiare colore al titolo!",
+      coloretitolo: "black"
+    },
+    methods: {
+      colore: function () {
+        this.coloretitolo = 'green'
+      }
     }
   }
 );

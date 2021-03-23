@@ -9,7 +9,7 @@
 }
 
 #root > * {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 hr {
@@ -42,20 +42,48 @@ hr {
   outline: none;
   width: 200px;
   height: 40px;
-  border-bottom: 5px solid #0868ab;
+  border-bottom: 2px solid #7FFF00;
   font-size: 20px;
   animation-name: color;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  cursor: pointer
 }
 
 @keyframes color {
   0% {
-    border-bottom: 3px solid #3fb984;
+    border-bottom: 4px solid #17B169;
   }
 
   100% {
-    border-bottom: 7px solid #31475e;
+    border-bottom: 8px solid #1B4D3E;
   }
+}
+
+.bonusbutton {
+  text-align: center;
+}
+
+.bonusbutton button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+  color: #ffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+}
+
+.bonusbutton button:hover {
+  opacity: 0.8;
+}
+
+
+.black {
+  color: black;
+}
+
+.green {
+  color:  #4CAF50;
+  font-size: 40px;
 }

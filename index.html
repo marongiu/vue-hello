@@ -11,17 +11,22 @@
 
   <div id="root">
     <div class="esercizio">
-      <h1>{{esercizioBase}}</h1>
+      <h1 :class="coloretitolo">{{esercizioBase}}</h1>
     </div>
     <div class="bonusimmagine">
       <hr>
       <img :src="immagineUrl" alt="immagine" style="width: 100px; margin: 10px;">
       <img :src="immagine" alt="immagine" style="width: 100px; margin: 10px;">
+      <hr>
     </div>
-    <hr>
     <div class="bonusinput">
       <h3>{{cambia}}</h3>
       <input v-model="esercizioBase">
+      <hr>
+    </div>
+    <div class="bonusbutton">
+      <h3>{{clicca}}</h3>
+      <button type="button" name="button" @click="colore">Click</button>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
