@@ -8,7 +8,10 @@ var app = new Vue(
       consegna: "Stampare a schermo un messaggio all’interno di un h1",
       esercizioBase: "Hello Vue.js!",
       // Aggiungere alla pagina un’immagine, presa anch’essa da un data.
-      immagine: "https://i.picsum.photos/id/80/200/300.jpg?hmac=E17wxAwPZDltWlMAMl8NBTC-sOsxGW2in2bAtCUFNl4"
+        // immagine con url
+      immagineUrl: "https://velug.it/images/banners/JQUERYLOGO.gif",
+        // immagine importata
+      immagine: "./assets/img/vue.png"
     }
   }
 );
